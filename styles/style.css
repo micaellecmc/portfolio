@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Manufacturing Consent|Prata");
+
+:root {
+    --primary-color: #CA1224; /* Cor primária */
+    --secondary-color: #f9f9f7; /* Cor secundária */
+    --background-color: #000000; /* Cor de fundo */
+    --font-family-primary: 'Montserrat', sans-serif; /* Fonte primária */
+    --font-family-secondary: 'Prata', serif; /* Fonte secundária */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+    color: #dcdcdcf0; /* Cor do texto */
+     background-color: var(--background-color); /* Cor de fundo */
+    font-family:  var(--font-family-primary); /* Fonte do corpo */
+    
+}
+
+.navbar {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: right; /* Centraliza os itens horizontalmente */
+    padding: 15px 0; /* Espaçamento interno da barra de navegação */
+}
+
+.navbar--list {
+    font-family: var(--font-family-primary); /* Fonte da lista de navegação */
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Organiza os itens em linha */
+    gap: 30px; /* Espaçamento entre os itens da lista */
+    margin-right: 10%; /* Margem direita da lista */
+}
+
+.navbar--list--item--link {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: var(--secondary-color) ; /* Cor dos links */
+    font-size: 1.125rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.navbar--list--item--link {transition-timing-function: linear;}
+
+.navbar--list--item--link:hover {
+    color: var(--primary-color); /* Cor dos links ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    transition: text-decoration width 0.6s;
+}
+
+.presentation {
+    padding: 5% 10%; /* Margem ao redor da apresentação */
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-items: space-between; /* Espaça os itens horizontalmente */
+}
+
+.presentation--content {
+   width: 65%; /* Largura do conteúdo da apresentação */
+   display: flex; /* Ativa o Flexbox para o conteúdo */
+   flex-direction: column; /* Organiza os itens em coluna */
+   gap: 20px; /* Espaçamento entre os itens */
+}
+
+.presentation--content--title {
+    font-family: var(--font-family-secondary) ; /* Fonte do título */
+    color: var(--secondary-color); /* Cor do título */
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    text-align: right; /* Alinhamento do título */
+}
+
+.bold-title {
+    font-family: 'Manufacturing Consent', serif; /* Fonte do texto em negrito */
+    color: var(--primary-color); /* Cor do texto em negrito */
+    font-size: 1.3em; /* Tamanho da fonte do texto em negrito */
+    text-decoration: none; /* Remove o sublinhado do texto em negrito */
+}
+
+.presentation--content--paragraph {
+
+    font-size: 1.5rem; /* Tamanho da fonte do parágrafo */
+    line-height: 1; /* Espaçamento entre linhas */
+    text-align: start; /* Alinhamento do parágrafo */
+}
+
+.bold-text {
+    color: var(--primary-color); /* Cor do texto em negrito */
+}
+
+.presentation--links {
+    display: flex; /* Ativa o Flexbox para os links */
+    flex-direction: column; /* Organiza os links em coluna */
+    align-items: center; /* Alinha os itens do link verticalmente */
+    gap: 20px; /* Espaçamento entre os links */
+    justify-content: space-between; /* Espaça os links horizontalmente */
+}
+
+.presentation--links--text {
+    font-size: 150%; /* Tamanho da fonte do subsubtitulo */
+    line-height: 3; /* Espaçamento entre linhas */
+    color: #373333; /* Cor do texto */
+}
+
+.presentation--links--link {
+    display: flex; /* Ativa o Flexbox para o link */
+    justify-content: center; /* Centraliza o conteúdo do link */
+    gap: 16px; /* Espaçamento entre os itens do link */
+    background-color: #e31529; /* Cor de fundo do link */
+    width: 50%; /* Largura do link */
+    text-align: center; /* Alinhamento do texto do link */
+    border-radius: 16px; /* Bordas arredondadas do link */
+    font-size: 1.5rem; /* Tamanho da fonte do link */
+    font-weight: 60; /* Negrito */
+    margin-right: 10px; /* Espaçamento entre os links */
+    padding: 21.5px 0; /* Espaçamento interno do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #000000; /* Cor do texto do link */
+    transition: width 0.1s;/* this determines how long it takes to expand*/
+}
+
+.presentation--links--link {transition-timing-function: linear;}
+
+.presentation--links--link:hover {
+    background-color: var(--primary-color); /* Cor de fundo do link ao passar o mouse */
+    width: 55%; /* Largura do link ao passar o mouse */
+    transition: 0.3s; /* Transição suave */
+}
+
+.image {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: end; /* Alinha a imagem à direita */
+    margin-left: 12.5%;
+    max-width: 45%; /* Imagens responsivas */
+    height: auto; /* Mantém a proporção das imagen */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 1vh 1vh 1vh var(--primary-color); /* Sombra suave */
+}
+
+.footer {
+    color: rgb(0, 0, 0); /* Cor do texto do rodapé */
+    background-color: var(--primary-color); /* Cor de fundo do rodapé */
+    text-align: center; /* Alinhamento do texto do rodapé */
+    padding: 10px 0; /* Espaçamento interno do rodapé */
+    /*position: fixed; /* Fixa so rodapé na parte inferior da página */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+    width: 100%; /* Largura total do rodapé */
+}
+
+@media (max-width: 655px) {
+    .navbar--list {
+        flex-direction: row; /* Organiza os itens em coluna */
+        gap: 15px; /* Espaçamento entre os itens da lista */
+        margin-right: 15px; /* Remove a margem direita */
+        align-items: center; /* Centraliza os itens */
+    }
+    .presentation {
+        flex-direction: column-reverse; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 5%;
+    }
+
+    .presentation--content {
+        width: auto; /* Largura total do conteúdo */
+        padding-top: 5%;
+    }
+
+    .image {
+        max-width: 80%; /* Imagens responsivas */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 20px; /* Adiciona margem superior */
+    }
+}
